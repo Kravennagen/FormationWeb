@@ -1,7 +1,7 @@
 # Formation Web
 
 ## Introduction
-Le but de ce projet est de fournir un projet Web basique afin de découvrir les technologies web classiques : HTML / CSS / PHP / MySQL. La mise en place des différents composants se fait en suivant les étapes ci-dessous.
+Le but de ce projet est de fournir un projet Web basique afin de découvrir les technologies web classiques : HTML / CSS / PHP / SQL. La mise en place des différents composants se fait en suivant les étapes ci-dessous.
 
 ## But du projet
 Le but du projet est de créer une application web qui permet de créer, lister, modifier et supprimer des utilisateurs.
@@ -12,3 +12,26 @@ Le but du projet est de créer une application web qui permet de créer, lister,
 * Un serveur MySQL qui permet la mise en place de bases de données
 
 2. Une fois installé, il faut lancer les 2 serveurs (Apache et MySQL). Cela est généralement accessible via une unique applicaiton qui lance les 2 serveurs. Il faut configurer MAMP (ou XAMPP) pour spécifier les différents ports sur lequels sont lancés les serveurs et le dossier dans lequel sont situés les fichiers de code. Je vous conseille de laisser les réglages par défaut ( Apaches: port 80, MySQL: port 3306, et pour le dossier contenant le code, créez un nouveau dossier vide)
+
+3. Pour débuter, commencez par créer un fichier `index.html` . HTML est un langage de mise en forme de données qui permet d'expliquer au navigateur ce que la page contient (par exemple : des titres, des paragraphes etc) qui fonctionne grâce à des balises qui décrivent le contenu de la page. Vous pouver remplir ce fichier avec le code suivant :
+```
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ma première page</title>
+</head>
+<body>
+<div>
+<h1>Ceci est un titre</h1>
+<h2>Ceci est un sous-titre</h2>
+<p>Ceci est un paragraphe</p>
+<a href="">Ceci est un lien</a>
+<ul>
+<li>Ceci est le premier élément d'une liste</li>
+<li>Ceci est le deuxième élément d'une liste</li>
+</ul>
+<input type="text" placeholder="Ceci est une entrée utilisateur de type text">
+</div>
+</body>
+</html>
+```
