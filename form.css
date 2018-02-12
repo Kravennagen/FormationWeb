@@ -1,0 +1,28 @@
+body{
+    background-image: url("https://d1vnh8mbrp67em.cloudfront.net/image/file/3/c9/88773/FortniteHalloweenSkins.jpg");
+}
+p{
+    color: white;
+}
+#couleur{
+    color: white;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #1f37c0;
+}
+.menu {
+    color: white
+}
