@@ -13,7 +13,7 @@ Le but du projet est de créer une application web qui permet de créer, lister,
 
 2. Une fois installé, il faut lancer les 2 serveurs (Apache et MySQL). Cela est généralement accessible via une unique applicaiton qui lance les 2 serveurs. Il faut configurer MAMP (ou XAMPP) pour spécifier les différents ports sur lequels sont lancés les serveurs et le dossier dans lequel sont situés les fichiers de code. Je vous conseille de laisser les réglages par défaut ( Apaches: port 80, MySQL: port 3306, et pour le dossier contenant le code, créez un nouveau dossier vide)
 
-3. Pour débuter, commencez par créer un fichier `index.html` . HTML est un langage de mise en forme de données qui permet d'expliquer au navigateur ce que la page contient (par exemple : des titres, des paragraphes etc) qui fonctionne grâce à des balises qui décrivent le contenu de la page. Vous pouver remplir ce fichier avec le code suivant :
+3. Pour débuter, commencez par créer un fichier `index.html` . HTML est un langage de mise en forme de données qui permet d'expliquer au navigateur ce que la page contient (par exemple : des titres, des paragraphes etc) qui fonctionne grâce à des balises qui décrivent le contenu de la page. Vous pouver remplir ce fichier avec le code suivant par exemple :
 ```
 <!DOCTYPE html>
 <html>
@@ -35,3 +35,7 @@ Le but du projet est de créer une application web qui permet de créer, lister,
 </body>
 </html>
 ```
+
+Une fois que votre fichier est sauvegardé, vous pouvez vous rendre à l'adresse `http://localhost/index.html` et vous observerez alors une page contenant différents composants (textes, titres, entrées utilisateurs etc). Familiarisez vous avec ces différents composants ( et découvrez-en d'autres ici : https://www.w3schools.com/tags/default.asp) et créez un formulaire qui permettre de créer un utilisateur avec ces attributs : Nom, Prénom, Age, Sexe, Pays d'origine et ce qu'il préfère manger.  Si vous avez des difficultés, vous pouvez vous aider du fichier `index.php` qui contient le formulaire tel qu'attendu. Pour chcune des entrées utilisateurs, il est important de spécifier un nom (attribut `name` des tags HTML) car c'est grâce au nom que nous retrouverons nos données à l'étape suivante.
+
+4. Une fois que vous avez crée un formulaire, vous pouvez créer un fichier PHP( `form.php`  par exemple) qui va recevoir les données du formulaire et les traiter. Pour relier le formulaire au fichier `form.php`, il suffit d'ajouter les attributs `action="form.php"`  et `method="POST"` au tag `form` de notre fichier `index.html`. Une fois que cela est fait, nous allons pouvoir les lire les valeurs des champs du formulaire de cette façon : `$prenom = $_POST["prenom"]`.
